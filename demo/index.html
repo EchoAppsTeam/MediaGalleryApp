@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Media Gallery App Demo</title>
+		<link rel="stylesheet" type="text/css" href="demo.css" />
+		<script type="text/javascript" src="http://cdn.echoenabled.com/sdk/v3/loader.js"></script>
+	</head>
+<body>
+	<div id="container" style="width: 800px">
+		<div id="documentation"></div>
+		<h1>Media Gallery App Demo</h1>
+		<div class="description">Media Galleries allows you to aggregate photo and video data from the Social Web, enable photo and video uploads on the page and display them in one of many beautiful visualizations.</div>
+		<div class="wrapper">
+			<div id="media-gallery"></div>
+		</div>
+	</div>
+	<!-- Client initialization -->
+	<script type="text/javascript">
+		Echo.Loader.initApplication({
+			"script": "http://cdn.echoenabled.com/apps/echo/media-gallery/app.js",
+			"component": "Echo.Apps.MediaGallery",
+			"backplane": {
+				"serverBaseURL": "http://api.echoenabled.com/v1",
+				"busName": "jskit"
+			},
+			"config": {
+				"target": document.getElementById("media-gallery"),
+				"appkey": "echo.jssdk.demo.aboutecho.com",
+				"targetURL": "http://example.com/media-gallery-app/",
+				"auth": {
+					"janrainApp": "echo"
+				}
+			}
+		});
+	</script>
+</body>
+</html>
