@@ -1,0 +1,36 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url("bg.png");
+}
+img {
+    border-style: none;
+}
+#documentation {
+	float: right;
+	font-size: 12px;
+	margin-top: 27px;
+}
+.description {
+	font-size: 13px;
+	margin: 0 0 15px;
+	line-height: 20px;
+}
+#container {
+	box-shadow: 0 4px 15px #666666;
+	background: #FAF9F3;
+	border: 1px solid #FFFFFF;
+	width: 640px;
+	padding: 0 20px 20px 20px;
+	margin: 50px auto 50px auto;
+}
+.wrapper {
+	background: #F5F4EE;
+	border: 1px dotted #CCCCCC;
+	margin-bottom: 25px;
+	padding: 5px;
+}
+#container h1 {
+    margin: 15px 0;
+}
